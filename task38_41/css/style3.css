@@ -1,0 +1,80 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.page {
+	width: fit-content;
+	height: 674px;
+	position: relative;
+	margin: auto;
+}
+.page::before {
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	background-color: #03a9f4;
+	width: 2px;
+	height: 100%;
+}
+.page::after {
+	content: "or";
+	width: 50px;
+	height: 50px;
+	background-color: #03a9f4;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	line-height: 50px;
+}
+.main-element {
+	float: left;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 550px;
+	background-color: #EEE;
+	margin: 40px;
+	position: relative;
+}
+.main-element .basic {
+	width: calc(100% - 60px);
+	background-color: #03a9f4;
+	border-radius: 6px;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 30px;
+	margin-bottom: 40px;
+}
+.main-element .free ,
+.main-element .pro {
+	width: calc(100% - 60px);
+	margin-left: 30px;
+	border-radius: 50%;
+	height: 490px;
+	background-color: #DDD;
+	position: relative;
+}
+.main-element .free::before {
+	content: "Free";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3em;
+}
+.main-element .pro::before {
+	content: "$30";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3em;
+}
