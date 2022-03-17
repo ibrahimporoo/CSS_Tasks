@@ -1,0 +1,30 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+.main-ul {
+	width: 400px;
+	margin: 40px auto;
+	list-style-type: none;
+}
+.main-ul li {
+	background-color: #DDD;
+	padding: 10px;
+	margin-bottom: 5px;
+}
+ol {
+	padding: 15px;
+	padding-left: 40px;
+}
+.main-ul li ol li ,
+.main-ul li ul li {
+	background-color: #FFF;
+	padding: 10px;
+}
+.main-ul li ul {
+	padding: 15px;
+	list-style-type: circle;
+	list-style-position: inside;
+}
