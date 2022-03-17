@@ -1,0 +1,13 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+div {
+	padding: 20px;
+	border: 2px solid #f67750;
+}
+div p {
+	padding: inherit;
+	border: inherit;
+	background-color: #ddd;
+	text-align: center;
+}
